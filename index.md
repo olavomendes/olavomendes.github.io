@@ -20,10 +20,11 @@
 </p>
 <img src="images/streamlit.png?raw=true"/>
 
+---
+
 ### Projetos menores
 
 - [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
 - [Previsão de vendas usando Keras](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Deep%20Learning/previsao_vendas_Keras.ipynb)
 - [Análise dos suicídios no Brasil](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Data%20Analysis/suicidios_no_Brasil.ipynb)
 
----
