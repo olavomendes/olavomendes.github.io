@@ -1,3 +1,3 @@
 ### "Portfolio Landing Page"
 
-Minha página de portfólio onde se pode encontrar os links dos meus projetos.
+Minha página de portfólio que pode ser acessada através de: <b>olavomendes.github.io<b>
