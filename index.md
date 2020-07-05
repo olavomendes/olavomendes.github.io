@@ -18,6 +18,7 @@
   Esse é um leitor/analisador de arquivos <b>.csv</b>, que permite carregar e obter estatísticas/visualizações de maneira
   simples.
 </p>
+<img src="images/streamlit.png?raw=true"/>
 
 ### Projetos menores
 
