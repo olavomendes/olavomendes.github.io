@@ -1,35 +1,28 @@
-## Portfolio
+## Meus projetos
 
 ---
 
-### Category Name 1 
+### Categoria(s): Data Science/Machine Learning
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Aluguel de Residências - Brasil](https://www.kaggle.com/olavomendes/rental-prices-in-brazil/notebook)
+<p align="justify">
+  Nesse projeto analiso os valores de aluguéis de residências brasileiros em busca de <i>insights</i> e 
+  em seguida utilizo modelos de ML para prever esses valores.
+</p>
+<img src="images/sp.png?raw=true"/>
 
 ---
 
-### Category Name 2
+[Leitor/Analisador de arquivos CSV](https://github.com/olavomendes/codenation-streamlit)
+<p align="justify">
+  Esse é um leitor/analisador de arquivos <b>.csv</b>, que permite carregar e obter estatísticas/visualizações de maneira
+  simples.
+</p>
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+### Projetos menores
+
+- [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
+- [Previsão de vendas usando Keras](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Deep%20Learning/previsao_vendas_Keras.ipynb)
+- [Análise dos suicídios no Brasil](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Data%20Analysis/suicidios_no_Brasil.ipynb)
 
 ---
-
-
-
-
----
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<!-- Remove above link if you don't want to attibute -->
