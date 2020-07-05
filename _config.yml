@@ -1,10 +1,10 @@
 title: Olavo Mendes
 logo: "/images/perfil.png?raw=true"
 description: >
-  First description 
-  <br><br>
-  Second description 
-  <br><br>
+  <p align="justify">
+    Descrição qualquer
+  </p>
+  <br>
   <a href="https://www.linkedin.com/in/olavo-mendes/">Meu LinkedIn</a> 
   
 theme: jekyll-theme-minimal
