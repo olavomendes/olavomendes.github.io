@@ -9,7 +9,6 @@
   Nesse projeto analiso os valores de aluguéis de residências brasileiros em busca de <i>insights</i> e 
   em seguida utilizo modelos de ML para prever esses valores.
 </p>
-<img src="images/sp.png?raw=true"/>
 
 ---
 
@@ -18,7 +17,6 @@
   Esse é um leitor/analisador de arquivos <b>.csv</b>, que permite carregar e obter estatísticas/visualizações de maneira
   simples.
 </p>
-<img src="images/streamlit.png?raw=true"/>
 
 ---
 
