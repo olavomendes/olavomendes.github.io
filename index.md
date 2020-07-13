@@ -19,7 +19,15 @@
 </p>
 
 ---
+### Categoria: Análise/Visualização de Dados
 
+[Vendas de casas em King County, USA](https://www.kaggle.com/olavomendes/house-sales-in-king-county-usa-analysis-pt-br/notebook)
+<p align="justify">
+  Nesse projeto analiso o preço de residências de King County e busco responder algumas perguntas através da análise/visualização 
+  dos dados, sem a aplicação de modelos de Machine Learning.
+</p>
+
+---
 ### Projetos menores
 
 - [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
