@@ -14,7 +14,7 @@
 
 [Leitor/Analisador de arquivos CSV](https://github.com/olavomendes/codenation-streamlit)
 <p align="justify">
-  Esse é um leitor/analisador de arquivos <b>.csv</b>, que permite carregar e obter estatísticas/visualizações de maneira
+  Com esse "app" é possível carregar arquivos <b>.csv</b> e obter estatísticas/visualizações de maneira
   simples.
 </p>
 
