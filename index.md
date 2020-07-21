@@ -1,6 +1,15 @@
 # Meus projetos
 
 ---
+### Categoria: Análise/Visualização de Dados
+
+[Vendas de casas em King County, USA](https://www.kaggle.com/olavomendes/house-sales-in-king-county-usa-analysis-pt-br/notebook)
+<p align="justify">
+  Nesse projeto analiso o preço de residências de King County e busco responder algumas perguntas através da análise/visualização 
+  dos dados, sem a aplicação de modelos de Machine Learning.
+</p>
+
+---
 
 ### Categoria(s): Data Science/Machine Learning
 
@@ -19,15 +28,14 @@
 </p>
 
 ---
-### Categoria: Análise/Visualização de Dados
 
-[Vendas de casas em King County, USA](https://www.kaggle.com/olavomendes/house-sales-in-king-county-usa-analysis-pt-br/notebook)
+### Categoria: Deep Learning
+
+[Classificador Batman X Superman](https://github.com/olavomendes/Projetos-DS-ML-DL/tree/master/Deep%20Learning/batmanXsupermanClassifier)
 <p align="justify">
-  Nesse projeto analiso o preço de residências de King County e busco responder algumas perguntas através da análise/visualização 
-  dos dados, sem a aplicação de modelos de Machine Learning.
+  Esse é um programa simples, feito para praticar deep learning, onde utilizei redes neurais para construir um classificador capaz de identificar se uma imagem é do Batman ou do Superman.
 </p>
 
----
 ### Projetos menores
 
 - [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
