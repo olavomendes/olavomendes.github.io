@@ -28,6 +28,12 @@
 </p>
 
 ---
+[Sistema de recomendação de livros](https://www.kaggle.com/olavomendes/book-recommender/notebook)
+<p align="justify">
+  Nesse projeto construo um sistema de recomendação de livros baseado em conteúdo.
+</p>
+
+--- 
 
 ### Categoria: Deep Learning
 
