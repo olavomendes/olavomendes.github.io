@@ -42,6 +42,8 @@
   Esse é um programa simples, feito para praticar deep learning, onde utilizei redes neurais para construir um classificador capaz de identificar se uma imagem é do Batman ou do Superman.
 </p>
 
+---
+
 ### Projetos menores
 
 - [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
