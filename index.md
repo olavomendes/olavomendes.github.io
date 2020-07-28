@@ -35,6 +35,13 @@
 
 --- 
 
+[Classificador de "fake news"](https://www.kaggle.com/olavomendes/your-first-fake-news-classifier/notebook)
+<p align="justify">
+  Um sistema simples para classificar se uma notícia é falsa ou não.
+</p>
+
+---
+
 ### Categoria: Deep Learning
 
 [Classificador Batman X Superman](https://github.com/olavomendes/Projetos-DS-ML-DL/tree/master/Deep%20Learning/batmanXsupermanClassifier)
