@@ -51,6 +51,13 @@
 
 ---
 
+[Classificador de placas de trânsito](https://www.kaggle.com/olavomendes/traffic-signs-recognition/notebook)
+<p align="justify">
+  Programa que classifica placas de trânsito.
+</p>
+
+---
+
 ### Projetos menores
 
 - [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
