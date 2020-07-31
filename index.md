@@ -3,7 +3,7 @@
 ---
 ### Categoria: Análise/Visualização de Dados
 
-[Vendas de casas em King County, USA](https://www.kaggle.com/olavomendes/house-sales-in-king-county-usa-analysis-pt-br/notebook)
+- [Vendas de casas em King County, USA](https://www.kaggle.com/olavomendes/house-sales-in-king-county-usa-analysis-pt-br/notebook)
 <p align="justify">
   Nesse projeto analiso o preço de residências de King County e busco responder algumas perguntas através da análise/visualização 
   dos dados, sem a aplicação de modelos de Machine Learning.
@@ -13,7 +13,7 @@
 
 ### Categoria(s): Data Science/Machine Learning
 
-[Aluguel de Residências - Brasil](https://www.kaggle.com/olavomendes/rental-prices-in-brazil/notebook)
+- [Aluguel de Residências - Brasil](https://www.kaggle.com/olavomendes/rental-prices-in-brazil/notebook)
 <p align="justify">
   Nesse projeto analiso os valores de aluguéis de residências brasileiros em busca de <i>insights</i> e 
   em seguida utilizo modelos de ML para prever esses valores.
@@ -21,21 +21,21 @@
 
 ---
 
-[Leitor/Analisador de arquivos CSV](https://github.com/olavomendes/codenation-streamlit)
+- [Leitor/Analisador de arquivos CSV](https://github.com/olavomendes/codenation-streamlit)
 <p align="justify">
   Com esse "app" é possível carregar arquivos <b>.csv</b> e obter estatísticas/visualizações de maneira
   simples.
 </p>
 
 ---
-[Sistema de recomendação de livros](https://www.kaggle.com/olavomendes/book-recommender/notebook)
+- [Sistema de recomendação de livros](https://www.kaggle.com/olavomendes/book-recommender/notebook)
 <p align="justify">
   Nesse projeto construo um sistema de recomendação de livros baseado em conteúdo.
 </p>
 
 --- 
 
-[Classificador de "fake news"](https://www.kaggle.com/olavomendes/your-first-fake-news-classifier/notebook)
+- [Classificador de "fake news"](https://www.kaggle.com/olavomendes/your-first-fake-news-classifier/notebook)
 <p align="justify">
   Um sistema simples para classificar se uma notícia é falsa ou não.
 </p>
@@ -44,16 +44,23 @@
 
 ### Categoria: Deep Learning
 
-[Classificador Batman X Superman](https://github.com/olavomendes/Projetos-DS-ML-DL/tree/master/Deep%20Learning/batmanXsupermanClassifier)
+- [Classificador Batman X Superman](https://github.com/olavomendes/Projetos-DS-ML-DL/tree/master/Deep%20Learning/batmanXsupermanClassifier)
 <p align="justify">
   Esse é um programa simples, feito para praticar deep learning, onde utilizei redes neurais para construir um classificador capaz de identificar se uma imagem é do Batman ou do Superman.
 </p>
 
 ---
 
-[Classificador de placas de trânsito](https://www.kaggle.com/olavomendes/traffic-signs-recognition/notebook)
+- [Classificador de placas de trânsito](https://www.kaggle.com/olavomendes/traffic-signs-recognition/notebook)
 <p align="justify">
   Programa que classifica placas de trânsito.
+</p>
+
+---
+
+- [Emojify](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
+<p align="justify">
+  Esse programa identifica expressões faciais humanas e mapeia para um emoji (avatar) correspondente.
 </p>
 
 ---
