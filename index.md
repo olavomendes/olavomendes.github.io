@@ -58,9 +58,9 @@
 
 ---
 
-- [Emojify](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
+- [Classificador de Emoções](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
 <p align="justify">
-  Esse programa identifica expressões faciais humanas e mapeia para um emoji (avatar) correspondente.
+  Esse programa identifica expressões faciais humanas e classifica como a emoção correspondente.
 </p>
 
 ---
