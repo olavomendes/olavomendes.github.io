@@ -65,6 +65,13 @@
 
 ---
 
+- [Tendência de preços das ações - Amazon](https://www.kaggle.com/olavomendes/your-first-rnn-model/notebook)
+<p align="justify">
+  Esse projeto prevê a tendência dos preços de ações da Amazon usando uma Rede Neural Recorrente (RNN) e a arquitetura Long short-term memory (LSTM).
+</p>
+
+---
+
 ### Projetos menores
 
 - [Dicas/Tutoriais de Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
