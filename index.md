@@ -28,6 +28,14 @@
 </p>
 
 ---
+
+- [Detecção de fraude](https://www.kaggle.com/olavomendes/fraude-de-cr-dito-ptbr/notebook)
+<p align="justify">
+  Nesse projeto utilizo modelos de ML e Redes Neurais para detectar se uma transação e fraudulenta ou não.
+</p>
+
+---
+
 - [Sistema de recomendação de livros](https://www.kaggle.com/olavomendes/book-recommender/notebook)
 <p align="justify">
   Nesse projeto construo um sistema de recomendação de livros baseado em conteúdo.
