@@ -50,6 +50,15 @@
 
 ---
 
+- [Retenção de funcionários](https://www.kaggle.com/olavomendes/reten-o-de-funcion-rios-ptbr/notebook)
+<p align="justify">
+  Neste projeto analiso as principais razões que fazem funcionários deixarem uma empresa (seja através de demissões por justa causa ou saídas 
+  voluntárias) e construo um classificador que retorna a probabilidade de determinado funcionário ficar ou deixar a empresa, além de apresentar
+  sugestões para reter os funcionários.
+</p>
+
+---
+
 ### Categoria: Deep Learning
 
 - [Classificador Batman X Superman](https://github.com/olavomendes/Projetos-DS-ML-DL/tree/master/Deep%20Learning/batmanXsupermanClassifier)
