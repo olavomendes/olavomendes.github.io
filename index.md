@@ -69,13 +69,6 @@
 
 ### Categoria: Deep Learning
 
-- [Classificador Batman X Superman](https://github.com/olavomendes/Projetos-DS-ML-DL/tree/master/Deep%20Learning/batmanXsupermanClassifier)
-<p align="justify">
-  Esse é um programa simples, feito para praticar deep learning, onde utilizei redes neurais para construir um classificador capaz de identificar se uma imagem é do Batman ou do Superman.
-</p>
-
----
-
 - [Classificador de placas de trânsito](https://www.kaggle.com/olavomendes/traffic-signs-recognition/notebook)
 <p align="justify">
   Programa que classifica placas de trânsito.
