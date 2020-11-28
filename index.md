@@ -52,17 +52,17 @@
 
 - [Retenção de funcionários](https://www.kaggle.com/olavomendes/reten-o-de-funcion-rios-ptbr/notebook)
 <p align="justify">
-  Esse é um projeto de aprendizado não-supervisionado no qual utilizo o algoritmo KMeans para agrupar clientes de um shopping em
-  grupos distintos.
+  Neste projeto analiso as principais razões que fazem funcionários deixarem uma empresa (seja através de demissões por justa causa ou saídas 
+  voluntárias) e construo um classificador que retorna a probabilidade de determinado funcionário ficar ou deixar a empresa, além de apresentar
+  sugestões para reter os funcionários.
 </p>
 
 ---
 
 - [Agrupamento de Clientes](https://www.kaggle.com/olavomendes/agrupamento-de-clientes-ptbr/notebook)
 <p align="justify">
-  Neste projeto analiso as principais razões que fazem funcionários deixarem uma empresa (seja através de demissões por justa causa ou saídas 
-  voluntárias) e construo um classificador que retorna a probabilidade de determinado funcionário ficar ou deixar a empresa, além de apresentar
-  sugestões para reter os funcionários.
+  Esse é um projeto de aprendizado não-supervisionado no qual utilizo o algoritmo KMeans para agrupar clientes de um shopping em
+  grupos distintos.
 </p>
 
 ---
