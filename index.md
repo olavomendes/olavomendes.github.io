@@ -93,6 +93,7 @@
 ### Projetos menores
 
 - [Dicas/Tutoriais - Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
+- [Detecção de faces com MTCNN](https://www.kaggle.com/olavomendes/detect-faces-with-3-lines-of-python-code)
 - [Projeto básicos - Arduino](https://github.com/olavomendes/projetos-livro-arduino-basico)
 - [Previsão de vendas usando Keras](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Deep%20Learning/previsao_vendas_Keras.ipynb)
 - [Análise dos suicídios no Brasil](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Data%20Analysis/suicidios_no_Brasil.ipynb)
