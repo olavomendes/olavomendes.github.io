@@ -69,6 +69,13 @@
 
 ### Categoria: Deep Learning
 
+- [Identificador de peças eletrônicas](https://www.kaggle.com/olavomendes/electronic-parts-identifier)
+<p align="justify">
+  Programa que identifica componentes eletrônicos comuns, como LEDs, potenciômetros, botões etc.
+</p>
+
+---
+
 - [Classificador de placas de trânsito](https://www.kaggle.com/olavomendes/traffic-signs-recognition/notebook)
 <p align="justify">
   Programa que classifica placas de trânsito.
@@ -95,6 +102,7 @@
 - [Dicas/Tutoriais - Arduino](https://github.com/olavomendes/arduino-dicas-tutoriais)
 - [Detecção de faces com MTCNN](https://www.kaggle.com/olavomendes/detect-faces-with-3-lines-of-python-code)
 - [Projeto básicos - Arduino](https://github.com/olavomendes/projetos-livro-arduino-basico)
+- [Carro robô - Arduino](https://github.com/olavomendes/robot-car-kit)
 - [Previsão de vendas usando Keras](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Deep%20Learning/previsao_vendas_Keras.ipynb)
 - [Análise dos suicídios no Brasil](https://github.com/olavomendes/Projetos-DS-ML-DL/blob/master/Data%20Analysis/suicidios_no_Brasil.ipynb)
 
