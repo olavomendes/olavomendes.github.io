@@ -2,12 +2,11 @@ title: <center> Olavo Mendes </center>
 logo: "/images/perfil.png?raw=true"
 description: >
   <p align="justify">
-    Sou graduando em Sistemas de Informação pela Universidade Federal do Ceará - UFC e 
-    desenvolvedor backend.
-    Me procure se quiser falar sobre <b>Data Science</b>,
-    <b>Machine Learning</b>, <b>Deep Learning</b>, <b>Eletrônica</b>, <b>Mecânica</b>, <b>Arduino</b> e/ou <b>Mass Effect</b>.
+    Desenvolvedor Backend que lê Asimov mais do que deveria.
+    Me procure se quiser falar sobre, <b>Machine Learning</b>, <b>Deep Learning</b>, <b>Eletrônica</b>, <b>Mecânica</b>, <b>Arduino</b>, e/ou <b>Mass Effect</b>.
   </p>
-  <a href="https://www.linkedin.com/in/olavo-mendes/">Meu LinkedIn</a> 
+  <a href="https://www.linkedin.com/in/olavo-mendes/">LinkedIn</a> 
+  <a href="https://www.kaggle.com/olavomendes">Kaggle</a> 
   
 theme: jekyll-theme-minimal
-google_analytics: UA-000000-0
+# google_analytics: UA-000000-0
