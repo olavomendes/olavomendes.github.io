@@ -10,9 +10,9 @@
 
 ---
 
-- [Classificador de placas de trânsito](https://www.kaggle.com/olavomendes/traffic-signs-recognition/notebook)
+- [Classificador de placas de trânsito](https://github.com/olavomendes/classificador-placas-transito)
 <p align="justify">
-  Programa que classifica placas de trânsito.
+  Programa simples que utiliza Visão Computacional para classificar placas de trânsito.
 </p>
 
 ---
