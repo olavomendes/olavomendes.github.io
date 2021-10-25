@@ -42,7 +42,7 @@
 
 - [Dicas/Tutoriais](https://github.com/olavomendes/arduino-dicas-tutoriais)
 <p align="justify">
-  Guia que preparei tanto para quem pretendo conhecer e aprender sobre Arduino, quanto pra quem já tem certa experiência e quer se aprofundar no assunto.
+  Guia que preparei tanto para quem pretende conhecer e aprender sobre Arduino, quanto pra quem já tem certa experiência e quer se aprofundar no assunto.
 </p>
 
 ---
