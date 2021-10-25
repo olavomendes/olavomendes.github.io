@@ -17,6 +17,12 @@
 
 ---
 
+- [Detecção de Objetos usando YOLO](https://github.com/olavomendes/deteccao-objetos-yolo)
+<p align="justify">
+  Projeto de Visão Computacional que utiliza YOLO para detectar 80 tipos diferentes de objetos cotidianos.
+</p>
+---
+
 - [Classificador de Emoções](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
 <p align="justify">
   Esse programa identifica expressões faciais humanas e classifica como a emoção correspondente.
