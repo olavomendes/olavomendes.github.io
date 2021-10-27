@@ -24,6 +24,13 @@
 
 ---
 
+- [Estimador de pose](https://github.com/olavomendes/pose-estimator)
+<p align="justify">
+  Projeto de Visão Computacional que utiliza MediaPipe para detectar poses em vídeos.
+</p>
+
+---
+
 - [Classificador de Emoções](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
 <p align="justify">
   Esse programa identifica expressões faciais humanas e classifica como a emoção correspondente.
