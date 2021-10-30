@@ -31,6 +31,13 @@
 
 ---
 
+- [Detector de mãos](https://github.com/olavomendes/hand-detector)
+<p align="justify">
+  Projeto de Visão Computacional que utiliza MediaPipe para detectar as mãos em vídeos.
+</p>
+
+---
+
 - [Classificador de Emoções](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
 <p align="justify">
   Esse programa identifica expressões faciais humanas e classifica como a emoção correspondente.
