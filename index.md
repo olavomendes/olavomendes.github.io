@@ -72,10 +72,3 @@
 <p align="justify">
   Projeto de construção de um Carro Robô utilizando Arduino.
 </p>
-
----
-
-
-### Projetos menores
-
-- [Detecção de faces com MTCNN](https://www.kaggle.com/olavomendes/detect-faces-with-3-lines-of-python-code)
