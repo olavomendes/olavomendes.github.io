@@ -5,14 +5,14 @@
 
 - [Identificador de peças eletrônicas](https://www.kaggle.com/olavomendes/electronic-parts-identifier)
 <p align="justify">
-  Programa que identifica componentes eletrônicos comuns, como LEDs, potenciômetros, botões etc.
+  Identifica componentes eletrônicos comuns, como LEDs, potenciômetros, botões, dentre outros.
 </p>
 
 ---
 
 - [Classificador de placas de trânsito](https://github.com/olavomendes/classificador-placas-transito)
 <p align="justify">
-  Programa simples que utiliza Visão Computacional para classificar placas de trânsito.
+  Utiliza Visão Computacional para classificar placas de trânsito.
 </p>
 
 ---
@@ -40,14 +40,14 @@
 
 - [Classificador de Emoções](https://www.kaggle.com/olavomendes/your-first-emoji-creator/notebook)
 <p align="justify">
-  Esse programa identifica expressões faciais humanas e classifica como a emoção correspondente.
+  Projeto de Visão Computacional que identifica expressões faciais humanas e classifica como a emoção correspondente.
 </p>
 
 ---
 
 - [Tendência de preços das ações - Amazon](https://www.kaggle.com/olavomendes/your-first-rnn-model/notebook)
 <p align="justify">
-  Esse projeto prevê a tendência dos preços de ações da Amazon usando uma Rede Neural Recorrente (RNN) e a arquitetura Long short-term memory (LSTM).
+  Prevê a tendência dos preços de ações da Amazon usando uma Rede Neural Recorrente (RNN) e a arquitetura Long short-term memory (LSTM).
 </p>
 
 ---
@@ -56,7 +56,7 @@
 
 - [Dicas/Tutoriais](https://github.com/olavomendes/arduino-dicas-tutoriais)
 <p align="justify">
-  Guia que preparei tanto para quem pretende conhecer e aprender sobre Arduino, quanto pra quem já tem certa experiência e quer se aprofundar no assunto.
+  Guia que preparei para quem pretende conhecer e aprender sobre Arduino, e quem já tem certa experiência e quer se aprofundar no assunto.
 </p>
 
 ---
