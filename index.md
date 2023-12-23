@@ -17,23 +17,9 @@
 
 ---
 
-- [Detecção de Objetos usando YOLO](https://github.com/olavomendes/deteccao-objetos-yolo)
-<p align="justify">
-  Projeto de Visão Computacional que utiliza YOLO para detectar 80 tipos diferentes de objetos cotidianos.
-</p>
-
----
-
 - [Estimador de pose](https://github.com/olavomendes/pose-estimator)
 <p align="justify">
   Projeto de Visão Computacional que utiliza MediaPipe para detectar poses em vídeos.
-</p>
-
----
-
-- [Detector de mãos](https://github.com/olavomendes/hand-detector)
-<p align="justify">
-  Projeto de Visão Computacional que utiliza MediaPipe para detectar as mãos em vídeos.
 </p>
 
 ---
@@ -51,6 +37,16 @@
 </p>
 
 ---
+
+- [Detecção de Objetos usando YOLO](https://github.com/olavomendes/deteccao-objetos-yolo)
+<p align="justify">
+  Projeto de Visão Computacional que utiliza YOLO para detectar 80 tipos diferentes de objetos cotidianos.
+</p>
+
+- [Detector de mãos](https://github.com/olavomendes/hand-detector)
+<p align="justify">
+  Projeto de Visão Computacional que utiliza MediaPipe para detectar as mãos em vídeos.
+</p>
 
 ### Arduino
 
