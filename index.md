@@ -50,6 +50,7 @@
   Projeto de Visão Computacional que utiliza MediaPipe para detectar as mãos em vídeos.
 </p>
 
+
 ### Arduino
 
 - [Dicas/Tutoriais](https://github.com/olavomendes/arduino-dicas-tutoriais)
