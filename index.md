@@ -43,6 +43,8 @@
   Projeto de Visão Computacional que utiliza YOLO para detectar 80 tipos diferentes de objetos cotidianos.
 </p>
 
+---
+
 - [Detector de mãos](https://github.com/olavomendes/hand-detector)
 <p align="justify">
   Projeto de Visão Computacional que utiliza MediaPipe para detectar as mãos em vídeos.
