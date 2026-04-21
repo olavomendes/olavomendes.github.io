@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Olavo Mendes — Senior Backend Engineer & AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── LIGHT THEME ── */
+    :root,
+    [data-theme="light"] {
+      --bg: #F4F6FB;
+      --surface: #E9EDF6;
+      --border: #C9D2E8;
+      --text: #0F1C3F;
+      --muted: #5A6A8A;
+      --accent: #1A3ADB;
+      --accent-light: #3B5BFF;
+      --accent-subtle: #E6EBFF;
+      --nav-bg: rgba(244,246,251,0.88);
+      --stat-bg: #F4F6FB;
+    }
+
+    /* ── DARK THEME ── */
+    [data-theme="dark"] {
+      --bg: #0B0F1E;
+      --surface: #131829;
+      --border: #1E2845;
+      --text: #E8EDF8;
+      --muted: #6B7FA8;
+      --accent: #4F79FF;
+      --accent-light: #7B9BFF;
+      --accent-subtle: #151E3A;
+      --nav-bg: rgba(11,15,30,0.88);
+      --stat-bg: #0B0F1E;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 4rem;
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .nav-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-left: 1px solid var(--border);
+      padding-left: 1.5rem;
+    }
+
+    .ctrl-btn {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.65rem;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+      border-radius: 2px;
+    }
+
+    .ctrl-btn:hover,
+    .ctrl-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-subtle);
+    }
+
+    .ctrl-sep {
+      color: var(--border);
+      font-size: 0.75rem;
+      user-select: none;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 5rem;
+    }
+
+    .hero-left {
+      padding: 7rem 3rem 5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid var(--border);
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(3rem, 5vw, 5.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-bio {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 42ch;
+      line-height: 1.75;
+      margin-bottom: 3rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--text);
+      color: var(--text);
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .btn:hover { background: var(--text); color: var(--bg); }
+
+    .btn-filled {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .btn-filled:hover {
+      background: var(--accent-light);
+      border-color: var(--accent-light);
+      color: #fff;
+    }
+
+    .hero-right {
+      padding: 7rem 4rem 5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: auto;
+    }
+
+    .stat-item {
+      background: var(--stat-bg);
+      padding: 2rem 1.5rem;
+      transition: background 0.3s;
+    }
+
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.8rem;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .current-role {
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--accent-subtle);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .role-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #3DB87A;
+      flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    .role-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .role-text strong {
+      display: block;
+      color: var(--text);
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 4rem; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    .section-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.1;
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--surface); transition: background 0.3s; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .skill-card {
+      background: var(--surface);
+      padding: 2rem;
+      transition: background 0.2s;
+    }
+
+    .skill-card:hover { background: var(--bg); }
+
+    .skill-icon { font-size: 1.4rem; margin-bottom: 1rem; }
+
+    .skill-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .skill-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    .tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: transparent;
+      transition: border-color 0.3s, color 0.3s;
+    }
+
+    .tag-accent { border-color: var(--accent); color: var(--accent); }
+
+    /* ── PROJECTS ── */
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+    }
+
+    .project-item {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      padding: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-item:last-child { border-bottom: none; }
+    .project-item:hover { background: var(--surface); }
+
+    .project-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    .project-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+    }
+
+    .project-desc {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 60ch;
+      margin-bottom: 1.25rem;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .project-type {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-align: right;
+    }
+
+    .project-arrow {
+      font-size: 1.25rem;
+      color: var(--muted);
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .project-item:hover .project-arrow { transform: translateX(4px); color: var(--accent); }
+
+    /* ── ABOUT ── */
+    #about { background: var(--surface); transition: background 0.3s; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-text p strong { color: var(--text); font-weight: 500; }
+
+    .about-aside { display: flex; flex-direction: column; gap: 2rem; }
+
+    .aside-block {
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+      background: var(--bg);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .aside-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .timeline-item { display: flex; gap: 1rem; margin-bottom: 1rem; }
+    .timeline-item:last-child { margin-bottom: 0; }
+
+    .timeline-year {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      flex-shrink: 0;
+      padding-top: 0.1rem;
+    }
+
+    .timeline-content { font-size: 0.875rem; color: var(--text); line-height: 1.5; }
+    .timeline-content span { display: block; font-size: 0.78rem; color: var(--muted); }
+
+    .interest-list { display: flex; flex-direction: column; gap: 0.6rem; }
+
+    .interest-item {
+      font-size: 0.875rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .interest-item::before { content: '→'; color: var(--accent); font-size: 0.75rem; }
+
+    /* ── CONTACT ── */
+    #contact { border-top: 1px solid var(--border); }
+    .contact-inner { max-width: 680px; }
+
+    .contact-intro {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      line-height: 1.75;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: background 0.2s;
+    }
+
+    .contact-link:last-child { border-bottom: none; }
+    .contact-link:hover { background: var(--surface); }
+
+    .contact-link-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .contact-link-val { font-size: 0.9rem; }
+    .contact-link-arrow { color: var(--accent); font-size: 0.9rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── LANG SWITCHING ── */
+    [data-lang="en"] [data-pt],
+    [data-lang="pt"] [data-en] { display: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { gap: 1.2rem; }
+      .nav-controls { padding-left: 1rem; gap: 0.35rem; }
+
+      #hero { grid-template-columns: 1fr; }
+      .hero-left { border-right: none; border-bottom: 1px solid var(--border); padding: 6rem 1.5rem 3rem; }
+      .hero-right { padding: 3rem 1.5rem; }
+
+      section { padding: 4rem 1.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .project-item { grid-template-columns: 1fr; }
+      .project-meta { flex-direction: row; align-items: center; }
+      footer { flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">olavo.mendes</span>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#skills"><span data-en>Skills</span><span data-pt>Skills</span></a></li>
+        <li><a href="#projects"><span data-en>Projects</span><span data-pt>Projetos</span></a></li>
+        <li><a href="#about"><span data-en>About</span><span data-pt>Sobre</span></a></li>
+        <li><a href="#contact"><span data-en>Contact</span><span data-pt>Contato</span></a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="ctrl-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <span class="ctrl-sep">|</span>
+        <button class="ctrl-btn" id="btn-pt" onclick="setLang('pt')">PT</button>
+        <span class="ctrl-sep">·</span>
+        <button class="ctrl-btn" id="btn-theme" onclick="toggleTheme()">
+          <span data-en>Dark</span><span data-pt>Escuro</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <h1>Olavo<br><em>Mendes</em></h1>
+      <p class="hero-bio">
+        <span data-en>Senior Backend Engineer & AI Developer with 5+ years building scalable systems and intelligent solutions. Tech Lead at Vivo · Telefônica Brasil. Where robust engineering meets machine intelligence.</span>
+        <span data-pt>Engenheiro Backend Sênior & Desenvolvedor de IA com mais de 5 anos construindo sistemas escaláveis e soluções inteligentes. Tech Lead na Vivo · Telefônica Brasil. Onde engenharia robusta encontra inteligência de máquina.</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-filled">
+          <span data-en>View Projects</span><span data-pt>Ver Projetos</span>
+        </a>
+        <a href="#contact" class="btn">
+          <span data-en>Get in Touch</span><span data-pt>Entrar em Contato</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="current-role">
+        <div class="role-dot"></div>
+        <div class="role-text">
+          <strong>Tech Lead — Vivo · Telefônica Brasil</strong>
+          <span data-en>São Paulo, Brazil · Full-time</span>
+          <span data-pt>São Paulo, Brasil · Tempo integral</span>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label"><span data-en>Years of experience</span><span data-pt>Anos de experiência</span></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">12+</div>
+          <div class="stat-label"><span data-en>Projects delivered</span><span data-pt>Projetos entregues</span></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label"><span data-en>AI domains</span><span data-pt>Domínios de IA</span></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">∞</div>
+          <div class="stat-label"><span data-en>Lines of curiosity</span><span data-pt>Linhas de curiosidade</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header fade-in">
+      <span class="section-num">01</span>
+      <h2><span data-en>Expertise</span><span data-pt>Especialidades</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-title"><span data-en>Backend Engineering</span><span data-pt>Engenharia Backend</span></div>
+        <p class="skill-desc">
+          <span data-en>Building high-performance, scalable APIs and distributed systems. Designing architectures that hold up under real-world pressure.</span>
+          <span data-pt>Construindo APIs de alto desempenho e sistemas distribuídos. Projetando arquiteturas que resistem à pressão do mundo real.</span>
+        </p>
+        <div class="skill-tags">
+          <span class="tag tag-accent">Node.js</span>
+          <span class="tag tag-accent">TypeScript</span>
+          <span class="tag tag-accent">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">REST</span>
+          <span class="tag">GraphQL</span>
+        </div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🧠</div>
+        <div class="skill-title"><span data-en>AI & Machine Learning</span><span data-pt>IA & Machine Learning</span></div>
+        <p class="skill-desc">
+          <span data-en>From classical ML pipelines to LLM-powered systems. Building agents, RAG architectures, and production-grade AI workflows.</span>
+          <span data-pt>De pipelines de ML clássico a sistemas com LLMs. Construindo agentes, arquiteturas RAG e fluxos de IA em produção.</span>
+        </p>
+        <div class="skill-tags">
+          <span class="tag tag-accent">LangChain</span>
+          <span class="tag tag-accent">TensorFlow</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">RAG</span>
+          <span class="tag">LLM Agents</span>
+        </div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">👁️</div>
+        <div class="skill-title"><span data-en>Computer Vision</span><span data-pt>Visão Computacional</span></div>
+        <p class="skill-desc">
+          <span data-en>Applying deep learning to visual problems — object detection, image classification, and real-time processing pipelines.</span>
+          <span data-pt>Aplicando deep learning a problemas visuais — detecção de objetos, classificação de imagens e pipelines em tempo real.</span>
+        </p>
+        <div class="skill-tags">
+          <span class="tag tag-accent">Deep Learning</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">YOLO</span>
+          <span class="tag">PyTorch</span>
+        </div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-title"><span data-en>Robotics & Electronics</span><span data-pt>Robótica & Eletrônica</span></div>
+        <p class="skill-desc">
+          <span data-en>Hardware meets software. Background in embedded systems, microcontrollers, and robotic process integration.</span>
+          <span data-pt>Hardware encontra software. Experiência em sistemas embarcados, microcontroladores e integração de processos robóticos.</span>
+        </p>
+        <div class="skill-tags">
+          <span class="tag">Embedded Systems</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">IoT</span>
+        </div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🏗️</div>
+        <div class="skill-title"><span data-en>Infrastructure & DevOps</span><span data-pt>Infraestrutura & DevOps</span></div>
+        <p class="skill-desc">
+          <span data-en>Containerization, CI/CD, and cloud deployments. Keeping systems observable, reproducible, and resilient.</span>
+          <span data-pt>Conteinerização, CI/CD e deploys em nuvem. Mantendo sistemas observáveis, reproduzíveis e resilientes.</span>
+        </p>
+        <div class="skill-tags">
+          <span class="tag">Docker</span>
+          <span class="tag">AWS</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Redis</span>
+          <span class="tag">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">👥</div>
+        <div class="skill-title"><span data-en>Tech Leadership</span><span data-pt>Liderança Técnica</span></div>
+        <p class="skill-desc">
+          <span data-en>Leading cross-functional engineering teams, defining technical vision, and mentoring developers at all stages of their careers.</span>
+          <span data-pt>Liderando times multifuncionais, definindo visão técnica e mentorando desenvolvedores em todas as fases de carreira.</span>
+        </p>
+        <div class="skill-tags">
+          <span class="tag"><span data-en>Team Mentoring</span><span data-pt>Mentoria</span></span>
+          <span class="tag">Architecture</span>
+          <span class="tag">Code Review</span>
+          <span class="tag">Agile</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header fade-in">
+      <span class="section-num">02</span>
+      <h2><span data-en>Selected Projects</span><span data-pt>Projetos Selecionados</span></h2>
+    </div>
+    <div class="projects-list">
+      <a href="#" class="project-item fade-in">
+        <div>
+          <div class="project-header">
+            <span class="project-num">001</span>
+            <h3 class="project-name">TelecomAI Assistant</h3>
+          </div>
+          <p class="project-desc">
+            <span data-en>LLM-powered internal assistant for Vivo's customer operations, combining RAG architecture with real-time telecom data retrieval. Reduced average resolution time by 40%.</span>
+            <span data-pt>Assistente interno com LLM para operações de atendimento da Vivo, combinando arquitetura RAG com recuperação de dados de telecom em tempo real. Reduziu o tempo médio de resolução em 40%.</span>
+          </p>
+          <div class="skill-tags">
+            <span class="tag">LangChain</span><span class="tag">Python</span><span class="tag">OpenAI</span><span class="tag">PostgreSQL</span><span class="tag">FastAPI</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-type">AI · NLP</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-item fade-in">
+        <div>
+          <div class="project-header">
+            <span class="project-num">002</span>
+            <h3 class="project-name">NetworkVision Inspector</h3>
+          </div>
+          <p class="project-desc">
+            <span data-en>Computer vision system for automated inspection of network infrastructure. Detects anomalies in real-time using custom-trained CNN models deployed at the edge.</span>
+            <span data-pt>Sistema de visão computacional para inspeção automatizada de infraestrutura de rede. Detecta anomalias em tempo real com modelos CNN treinados e implantados na borda.</span>
+          </p>
+          <div class="skill-tags">
+            <span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">Python</span><span class="tag">YOLO</span><span class="tag">Docker</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-type"><span data-en>Computer Vision</span><span data-pt>Visão Computacional</span></span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-item fade-in">
+        <div>
+          <div class="project-header">
+            <span class="project-num">003</span>
+            <h3 class="project-name">ScalePulse API Gateway</h3>
+          </div>
+          <p class="project-desc">
+            <span data-en>High-throughput API gateway built in Node.js/TypeScript handling 10k+ req/s, featuring dynamic rate limiting, intelligent caching, and full observability stack.</span>
+            <span data-pt>API gateway de alta vazão em Node.js/TypeScript com mais de 10k req/s, com rate limiting dinâmico, cache inteligente e stack completo de observabilidade.</span>
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Redis</span><span class="tag">Prometheus</span><span class="tag">AWS</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-type">Backend · Infra</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+
+      <a href="#" class="project-item fade-in">
+        <div>
+          <div class="project-header">
+            <span class="project-num">004</span>
+            <h3 class="project-name">RoboLog Collector</h3>
+          </div>
+          <p class="project-desc">
+            <span data-en>IoT data pipeline for autonomous robotic units, collecting sensor telemetry, processing it with a Django backend, and feeding anomaly detection ML models.</span>
+            <span data-pt>Pipeline de dados IoT para unidades robóticas autônomas, coletando telemetria de sensores, processando com backend Django e alimentando modelos de ML para detecção de anomalias.</span>
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">MQTT</span><span class="tag">Raspberry Pi</span><span class="tag">ML</span>
+          </div>
+        </div>
+        <div class="project-meta">
+          <span class="project-type">Robotics · IoT</span>
+          <span class="project-arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header fade-in">
+      <span class="section-num">03</span>
+      <h2><span data-en>About</span><span data-pt>Sobre</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <div data-en>
+          <p>I'm a <strong>Senior Backend Engineer and AI Developer</strong> with over five years building systems that are meant to last — scalable, observable, and aligned with real business needs.</p>
+          <p>At <strong>Vivo · Telefônica Brasil</strong>, I lead engineering teams navigating the complexity of large-scale telecom infrastructure, increasingly powered by AI. I care deeply about code quality, team growth, and shipping things that matter.</p>
+          <p>My background in <strong>electronics and robotics</strong> gives me a different lens on software — one grounded in constraints, systems thinking, and the humbling reality of hardware. It keeps me honest.</p>
+          <p>Beyond the terminal, I write science fiction — because the best way to explore where technology is taking us is to imagine it first.</p>
+        </div>
+        <div data-pt>
+          <p>Sou <strong>Engenheiro Backend Sênior e Desenvolvedor de IA</strong> com mais de cinco anos construindo sistemas feitos para durar — escaláveis, observáveis e alinhados com necessidades reais de negócio.</p>
+          <p>Na <strong>Vivo · Telefônica Brasil</strong>, lidero times de engenharia navegando pela complexidade de uma infraestrutura de telecom em larga escala, cada vez mais impulsionada por IA.</p>
+          <p>Minha formação em <strong>eletrônica e robótica</strong> me dá uma perspectiva diferente sobre software — fundamentada em restrições, pensamento sistêmico e a realidade do hardware.</p>
+          <p>Além do terminal, escrevo ficção científica — porque a melhor forma de explorar para onde a tecnologia nos leva é imaginá-la primeiro.</p>
+        </div>
+      </div>
+      <div class="about-aside fade-in">
+        <div class="aside-block">
+          <div class="aside-title"><span data-en>Experience</span><span data-pt>Experiência</span></div>
+          <div class="timeline-item">
+            <span class="timeline-year">2022–</span>
+            <div class="timeline-content">Tech Lead<span>Vivo · Telefônica Brasil</span></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2020</span>
+            <div class="timeline-content">Senior Backend Engineer<span>[<span data-en>Previous Company</span><span data-pt>Empresa Anterior</span> — Placeholder]</span></div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2018</span>
+            <div class="timeline-content">Software Engineer<span>[<span data-en>Previous Company</span><span data-pt>Empresa Anterior</span> — Placeholder]</span></div>
+          </div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-title"><span data-en>Other Interests</span><span data-pt>Outros Interesses</span></div>
+          <div class="interest-list">
+            <div class="interest-item"><span data-en>Science Fiction Writing</span><span data-pt>Escrita de Ficção Científica</span></div>
+            <div class="interest-item"><span data-en>Electronics & Robotics</span><span data-pt>Eletrônica & Robótica</span></div>
+            <div class="interest-item"><span data-en>AI Ethics & Philosophy</span><span data-pt>Ética e Filosofia da IA</span></div>
+            <div class="interest-item"><span data-en>Team Mentorship</span><span data-pt>Mentoria de Times</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header fade-in">
+      <span class="section-num">04</span>
+      <h2><span data-en>Get in Touch</span><span data-pt>Entre em Contato</span></h2>
+    </div>
+    <div class="contact-inner">
+      <p class="contact-intro fade-in">
+        <span data-en>Open to conversations about interesting engineering challenges, AI projects, tech leadership, or just a good exchange of ideas. Feel free to reach out.</span>
+        <span data-pt>Aberto a conversas sobre desafios de engenharia, projetos de IA, liderança técnica ou uma boa troca de ideias. Sinta-se à vontade para entrar em contato.</span>
+      </p>
+      <div class="contact-links fade-in">
+        <a href="mailto:olavo@placeholder.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-val">olavo@placeholder.com</span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/placeholder" target="_blank" class="contact-link">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-val">linkedin.com/in/olavo-mendes</span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+        <a href="https://github.com/placeholder" target="_blank" class="contact-link">
+          <span class="contact-link-label">GitHub</span>
+          <span class="contact-link-val">github.com/olavomendes</span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+      </div>
+      <a href="mailto:olavo@placeholder.com" class="btn btn-filled fade-in">
+        <span data-en>Send a Message →</span><span data-pt>Enviar Mensagem →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-text">© 2025 Olavo Mendes. <span data-en>All rights reserved.</span><span data-pt>Todos os direitos reservados.</span></span>
+    <span class="footer-text"><span data-en>Built with precision</span><span data-pt>Feito com precisão</span> · Recife, Brasil</span>
+  </footer>
+
+  <script>
+    // ── LANGUAGE ──
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.setAttribute('lang', lang === 'pt' ? 'pt-BR' : 'en');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+    }
+
+    // ── THEME ──
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      const btn = document.getElementById('btn-theme');
+      const enSpan = btn.querySelector('[data-en]');
+      const ptSpan = btn.querySelector('[data-pt]');
+      if (enSpan) enSpan.textContent = isDark ? 'Dark' : 'Light';
+      if (ptSpan) ptSpan.textContent = isDark ? 'Escuro' : 'Claro';
+    }
+
+    // ── FADE IN ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Staggered children
+    document.querySelectorAll('.skills-grid, .projects-list').forEach(container => {
+      [...container.children].forEach((child, i) => {
+        child.style.transitionDelay = `${i * 0.08}s`;
+      });
+    });
+  </script>
+</body>
+</html>
